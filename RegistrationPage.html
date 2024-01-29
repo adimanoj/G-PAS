@@ -1,0 +1,149 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="RegistrationPage.css">
+    
+</head>
+<body>
+  <div class="login-box">
+    <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Username</label>
+        </div>
+  
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Email ID</label>
+        </div>
+        </form>
+
+    <form id="search-form">
+      <div class="user-box">
+        <input type="text" id="search-box" required="">
+        <label>Image Search</label>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+    <div id="search-result" class="image-results"></div>
+
+    <div id="selected-image-overlay" class="selected-image-overlay">
+        <div class="selected-image-container">
+            <img id="selected-image" class="selected-image" src="" alt="">
+            <button id="close-selected-image">Close</button>
+        </div>
+    </div> 
+      
+      <form>
+      <center> 
+        <a href="#">
+          SEND
+          <span></span>
+        </a>
+      </center> 
+    </form>
+  </div>
+
+  <script src="RPSearchBar.js"></script>
+</body>
+</html>
+-->
+
+<!-- Shariques sign up page along with RegistrationPage.css and RPSearch.js-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="RegistrationPage.css">
+    <style>
+      .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+.close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    </style>
+</head>
+<body>
+  <form method="post" action="/search"> 
+    <div style="margin-bottom: 15px;"> 
+        <label for="username">Username</label> 
+        <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" id="username" name="username" placeholder="Create A Username (use only letters and numbers)" Required> 
+    </div> 
+    <div style="margin-bottom: 15px;"> 
+        <label for="fname">First Name</label> 
+        <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" id="fname" name="fname" placeholder="Enter Your First Name" Required> 
+    </div> 
+    <div style="margin-bottom: 15px;"> 
+        <label for="lname">Last Name</label> 
+        <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" id="lname" name="lname" placeholder="Enter Your Last Name" Required> 
+    </div> 
+    <div style="margin-bottom: 15px;"> 
+        <label for="email">Email</label> 
+        <input type="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" id="email" name="email" placeholder="Enter Your Email Address" Required> 
+    </div> 
+</form>
+
+    <form id="search-form">
+      <div class="user-box">
+        <label for="">Search Image</label>
+        <input type="text"  style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" id="search-box" placeholder="Search image of your favourite choice" required="">
+      </div>
+      <br>
+      <button type="submit">Search</button>
+    </form>
+    <div id="search-result" class="image-results"></div>
+
+    <div id="selected-image-overlay" class="selected-image-overlay">
+        <div class="selected-image-container">
+            <img id="selected-image" class="selected-image" src="" alt="">
+            <button id="close-selected-image">Close</button>
+        </div>
+    </div> 
+      
+      <form>
+      <center> 
+        <a href="#">
+          SEND
+          <span></span>
+        </a>
+      </center> 
+    </form>
+  </div>
+
+  <script src="RPSearchBar.js"></script>
+</body>
+</html>
